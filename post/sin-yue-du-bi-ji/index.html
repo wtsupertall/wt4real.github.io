@@ -1,0 +1,117 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>SIN阅读笔记 | Gridea</title>
+<link rel="shortcut icon" href="http://cxk666.cn//favicon.ico?v=1563440612930">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="stylesheet" href="http://cxk666.cn//styles/main.css">
+
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
+
+
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="http://cxk666.cn/">
+  <img class="avatar" src="http://cxk666.cn//images/avatar.png?v=1563440612930" alt="">
+  </a>
+  <h1 class="site-title">
+    Gridea
+  </h1>
+  <p class="site-description">
+    温故而知新
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+      
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              SIN阅读笔记
+            </h2>
+            <div class="post-info">
+              <time class="post-time">
+                · 2019-07-18 ·
+              </time>
+              
+            </div>
+            
+            <div class="post-content">
+              <p>##推理结构网络##</p>
+<p><strong>场景上下文信息</strong>对于目标检测很重要。</p>
+<p>SIN不仅考虑了目标的视觉表现，还考虑了包括了场景上下文信息和单个图像中的对象关系；当利用结构化信息时，就将目标检测问题看为认知问题和推理问题。</p>
+<p>SIN将目标检测作为图新结构推理问题来考虑，在给定图像的情况下，被检测的对象被视为图中的节点，对象之间的关系被建模为图中的边。</p>
+<p>SIN作为一种探测器，他结合了经典的检测框架(faster R-CNN），并带有一个图形模型，目的在于推断目标的状态。</p>
+<p>通常情况下，图像包含了丰富的上下文信息，包括场景上下文和对象关系，忽略这些信息会对目标检测精度造成影响。</p>
+<p>实验研究表明，对上下文进行建模可以改进识别算法。
+2种上下文信息模型来提高检测的精度。第一种类型结合了对象或场景级上下文的上下文；第二种是实例级的对象-对象间的关系。两种模型组合在一起可以很好的帮助检测。</p>
+<p>文章提出的一个猜想：大多数的，自然图像中的视觉是一个有机整体，具有场景，对象，关系。目标检测不仅仅是一个认知问题，还是一个基于对象细节的上下文信息推理问题。</p>
+<p>将对象看作是图的节点，对象关系是图的边缘，这些对象在场景上下文的指导下通过图进行交互。一个对象会接收来自场景以及与其高度相关的对象的消息。这么说，对象的状态不仅由其自身决定，而且收场景上下文及对象间关系的影响。最后，使用每个对象的状态来确定其类别并优化其位置。</p>
+<p>SIN中的关键组件是存储来自于场景等其他对象的不同信息编码为对象状态的存储模块，文章提出了一种门控循环单元作为存储单元的新方法。</p>
+<p>现代的目标检测技术可以分为两类： region proposals based methods（基于区域回归的方法、两步法）和proposal-free methods （一步法）</p>
+
+            </div>
+          </article>
+        </div>
+    
+        
+
+        
+    
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+</div>
+
+<script>
+  hljs.initHighlightingOnLoad()
+</script>
+
+      </div>
+    </div>
+  </body>
+</html>
